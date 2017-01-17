@@ -1,0 +1,49 @@
+---
+title: "nj test"
+author: "Simon Frost"
+date: "16 January 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ape)
+```
+
+```{r}
+set.seed(1234)
+```
+
+```{r}
+tr <- rtree(6)
+```
+
+```{r}
+d <- cophenetic.phylo(tr)
+```
+
+```{r}
+d2 <- as.dist(d)
+```
+
+```{r}
+tr2 <- nj(d2)
+```
+
+```{r}
+cbind(tr2$edge,tr2$edge.length)
+```
+
+
+```{r}
+plot(tr)
+```
+
+```{r}
+plot(nj(d))
+```
+
+
