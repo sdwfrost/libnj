@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "nj.h"
 
-/* The C code (with minor changes is */
+/* The C code (with minor changes) is */
 /* Copyright 2006-2011 Emmanuel Paradis */
 /* https://github.com/cran/ape/blob/master/COPYING */
 /* Thanks Emmanuel! */
